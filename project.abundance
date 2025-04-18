@@ -7,7 +7,7 @@
     "ioValues": [
         {
             "name": "number2",
-            "ioValue": 12
+            "ioValue": 48
         }
     ],
     "description": "Molecules provide an organizational structure to contain atoms. Double click on a molecule to enter it. Use the up arrow in the upper right hand corner of the screen to go up one level.",
@@ -25,13 +25,13 @@
         {
             "atomType": "Rectangle",
             "name": "Rectangle",
-            "x": 0.19990176817288802,
-            "y": 0.5898366606170599,
+            "x": 0.19155206286836934,
+            "y": 0.558983666061706,
             "uniqueID": 1744950259732,
             "ioValues": [
                 {
                     "name": "x length",
-                    "ioValue": 12
+                    "ioValue": 48
                 },
                 {
                     "name": "y length",
@@ -44,7 +44,7 @@
             "atomType": "Input",
             "name": "number2",
             "x": 0.04,
-            "y": 0.29038112522686027,
+            "y": 0.29764065335753176,
             "uniqueID": 1744950397243,
             "ioValues": [],
             "description": "Adds an input to the parent molecule. If the parent molecule is the top level of the project then the input will be available when the project is shared or imported into another project. Name is editable",
@@ -63,8 +63,8 @@
         {
             "atomType": "Extrude",
             "name": "Extrude",
-            "x": 0.306483300589391,
-            "y": 0.6588021778584392,
+            "x": 0.2932220039292731,
+            "y": 0.6497277676950999,
             "uniqueID": 1744950533065,
             "ioValues": [
                 {
@@ -80,9 +80,9 @@
         },
         {
             "atomType": "Constant",
-            "name": "Constant",
-            "x": 0.21709233791748528,
-            "y": 0.8185117967332124,
+            "name": "Thickness",
+            "x": 0.10854616895874264,
+            "y": 0.822141560798548,
             "uniqueID": 1744952017795,
             "ioValues": [],
             "description": "Defines a mathematical constant.",
