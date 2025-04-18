@@ -4,11 +4,104 @@
     "x": 0,
     "y": 0,
     "uniqueID": 1744950234200,
-    "ioValues": [],
+    "ioValues": [
+        {
+            "name": "number2",
+            "ioValue": 12
+        }
+    ],
     "description": "Molecules provide an organizational structure to contain atoms. Double click on a molecule to enter it. Use the up arrow in the upper right hand corner of the screen to go up one level.",
     "topLevel": true,
-    "allAtoms": [],
-    "allConnectors": [],
+    "allAtoms": [
+        {
+            "atomType": "Output",
+            "name": "Output",
+            "x": 0.98,
+            "y": 0.5,
+            "uniqueID": 1744950244064,
+            "ioValues": [],
+            "description": "Connect geometry here to make it available in the next level up. "
+        },
+        {
+            "atomType": "Rectangle",
+            "name": "Rectangle",
+            "x": 0.19990176817288802,
+            "y": 0.5898366606170599,
+            "uniqueID": 1744950259732,
+            "ioValues": [
+                {
+                    "name": "x length",
+                    "ioValue": 12
+                },
+                {
+                    "name": "y length",
+                    "ioValue": 25
+                }
+            ],
+            "description": "Creates a new rectangle."
+        },
+        {
+            "atomType": "Input",
+            "name": "number2",
+            "x": 0.04,
+            "y": 0.29038112522686027,
+            "uniqueID": 1744950397243,
+            "ioValues": [],
+            "description": "Adds an input to the parent molecule. If the parent molecule is the top level of the project then the input will be available when the project is shared or imported into another project. Name is editable",
+            "type": "number"
+        },
+        {
+            "atomType": "Input",
+            "name": "length",
+            "x": 0.04,
+            "y": 0.5825771324863883,
+            "uniqueID": 1744950420782,
+            "ioValues": [],
+            "description": "Adds an input to the parent molecule. If the parent molecule is the top level of the project then the input will be available when the project is shared or imported into another project. Name is editable",
+            "type": "number"
+        },
+        {
+            "atomType": "Extrude",
+            "name": "Extrude",
+            "x": 0.306483300589391,
+            "y": 0.6588021778584392,
+            "uniqueID": 1744950533065,
+            "ioValues": [
+                {
+                    "name": "geometry",
+                    "ioValue": 1744950259732
+                },
+                {
+                    "name": "height",
+                    "ioValue": 10
+                }
+            ],
+            "description": "Extrudes a 2D shape. Input can be negitive. "
+        }
+    ],
+    "allConnectors": [
+        {
+            "ap1Name": "geometry",
+            "ap2Name": "geometry",
+            "ap2Primary": true,
+            "ap1ID": 1744950259732,
+            "ap2ID": 1744950533065
+        },
+        {
+            "ap1Name": "number or geometry",
+            "ap2Name": "x length",
+            "ap2Primary": false,
+            "ap1ID": 1744950397243,
+            "ap2ID": 1744950259732
+        },
+        {
+            "ap1Name": "number or geometry",
+            "ap2Name": "y length",
+            "ap2Primary": false,
+            "ap1ID": 1744950420782,
+            "ap2ID": 1744950259732
+        }
+    ],
     "unitsKey": "Inches",
     "fileTypeVersion": 1,
     "compiledBom": {},
