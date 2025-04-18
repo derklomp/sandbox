@@ -16,8 +16,8 @@
         {
             "atomType": "Output",
             "name": "Output",
-            "x": 0.98,
-            "y": 0.5,
+            "x": 0.9837917485265226,
+            "y": 0.5099818511796733,
             "uniqueID": 1744950244064,
             "ioValues": [],
             "description": "Connect geometry here to make it available in the next level up. "
@@ -73,10 +73,20 @@
                 },
                 {
                     "name": "height",
-                    "ioValue": 10
+                    "ioValue": 2
                 }
             ],
             "description": "Extrudes a 2D shape. Input can be negitive. "
+        },
+        {
+            "atomType": "Constant",
+            "name": "Constant",
+            "x": 0.21709233791748528,
+            "y": 0.8185117967332124,
+            "uniqueID": 1744952017795,
+            "ioValues": [],
+            "description": "Defines a mathematical constant.",
+            "value": 2
         }
     ],
     "allConnectors": [
@@ -100,6 +110,13 @@
             "ap2Primary": false,
             "ap1ID": 1744950420782,
             "ap2ID": 1744950259732
+        },
+        {
+            "ap1Name": "number",
+            "ap2Name": "height",
+            "ap2Primary": false,
+            "ap1ID": 1744952017795,
+            "ap2ID": 1744950533065
         }
     ],
     "unitsKey": "Inches",
